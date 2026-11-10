@@ -251,8 +251,10 @@ body {
   display: inline-block;
 }
 .dot-up { background: var(--up); }
-.dot-down { background: var(--down); margin-left: 10px; }
+.dot-down { background: var(--down); }
 .dot-idle { background: var(--idle); }
+
+.legend-inline .dot-down { margin-left: 10px; }
 
 .donut-wrap {
   position: relative;
