@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1360">
+<meta name="robots" content="noindex, nofollow">
+<title>KOSTOLANY INVESTMENT PORTFOLIO</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='6' fill='%23c6f432'/><path d='M4.5 16.5 L10 11 L13.5 14.5 L19.5 8.5 M19.5 8.5 L19.5 13 M19.5 8.5 L15 8.5' stroke='%230d1205' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+
+  <header class="head">
+    <div class="head-left">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 17 L9.5 10.5 L13.5 14.5 L21 7"/>
+          <path d="M21 7 L21 12 M21 7 L16 7"/>
+        </svg>
+      </div>
+      <h1>KOSTOLANY INVESTMENT PORTFOLIO</h1>
+    </div>
+    <div class="head-right">
+      <span class="chip" id="asOf">시세 확인 중…</span>
+      <span class="badge" id="srcBadge">실시세 · 5분 간격 갱신</span>
+    </div>
+  </header>
+
+  <section class="summary">
+    <div class="card card-accent">
+      <div class="card-label">평균 수익률</div>
+      <div class="accent-row">
+        <strong class="accent-value" id="avgReturn">—</strong>
+        <span class="accent-note" id="avgNote">—</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">최고 수익</div>
+      <div class="peak-row">
+        <span class="peak-name" id="bestName">—</span>
+        <span class="peak-value" id="bestValue">—</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">최저 수익</div>
+      <div class="peak-row">
+        <span class="peak-name" id="worstName">—</span>
+        <span class="peak-value" id="worstValue">—</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">수익 · 손실</div>
+      <div class="tally" id="tally">
+        <span class="tally-up">—</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="middle">
+    <div class="card">
+      <div class="card-head">
+        <h2>종목별 수익률</h2>
+        <span class="card-sub">높은 순</span>
+      </div>
+      <ul class="bars" id="bars"></ul>
+      <div class="legend-inline">
+        <span class="dot dot-up"></span><span>상승</span>
+        <span class="dot dot-down"></span><span>하락</span>
+        <span class="legend-note">진입가 대비 현재가 기준</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h2>종목 상태</h2>
+      </div>
+      <div class="donut-wrap">
+        <svg class="donut" viewBox="0 0 120 120" role="img" aria-labelledby="donutTitle">
+          <title id="donutTitle">수익·손실 종목 비중</title>
+          <circle class="donut-track" cx="60" cy="60" r="50"></circle>
+          <circle class="donut-seg seg-up"   id="segUp"   cx="60" cy="60" r="50"></circle>
+          <circle class="donut-seg seg-down" id="segDown" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <div class="donut-center">
+          <span class="donut-cap" id="donutCap">— STOCKS</span>
+          <strong class="donut-main" id="donutMain">—</strong>
+        </div>
+      </div>
+      <ul class="legend" id="legend"></ul>
+    </div>
+  </section>
+
+  <section class="card holdings">
+    <div class="card-head">
+      <h2>보유 종목</h2>
+      <span class="card-sub">상장 시장 통화 기준</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-name">종목</th>
+          <th class="num">진입가</th>
+          <th class="num">현재가</th>
+          <th class="num">수익률</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </section>
+
+  <p class="foot">수수료 · 세금 · 환율 미반영.</p>
+
+</div>
+
+<script src="data/holdings.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

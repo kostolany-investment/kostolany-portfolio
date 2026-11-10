@@ -1,0 +1,40 @@
+name: 시세 갱신
+
+on:
+  schedule:
+    - cron: '*/5 0-6,13-21 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-prices
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 시세 조회
+        env:
+          STOCK_SYMBOLS: ${{ secrets.STOCK_SYMBOLS }}
+        run: node scripts/fetch-prices.mjs
+
+      - name: 변경됐을 때만 커밋
+        run: |
+          if git diff --quiet -- data/prices.json; then
+            echo "시세 변동 없음 — 커밋하지 않습니다."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/prices.json
+          git commit -m "chore: 시세 갱신 $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

@@ -1,0 +1,41 @@
+{
+  "updatedAt": "2026-11-10T12:56:09.309Z",
+  "prices": {
+    "A": {
+      "price": 340000,
+      "source": "naver",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-10T20:00:00+09:00",
+      "changeRate": -2.02,
+      "fetchedAt": "2026-11-10T12:56:09.210Z",
+      "stale": false
+    },
+    "B": {
+      "price": 142.07,
+      "source": "naver",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-09T16:00:00-05:00",
+      "changeRate": 5.81,
+      "fetchedAt": "2026-11-10T12:56:09.245Z",
+      "stale": false
+    },
+    "C": {
+      "price": 51.43,
+      "source": "naver",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-09T16:00:00-05:00",
+      "changeRate": -0.12,
+      "fetchedAt": "2026-11-10T12:56:09.246Z",
+      "stale": false
+    },
+    "D": {
+      "price": 1.37,
+      "source": "naver",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-09T16:00:00-05:00",
+      "changeRate": 3.01,
+      "fetchedAt": "2026-11-10T12:56:09.247Z",
+      "stale": false
+    }
+  }
+}
