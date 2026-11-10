@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T15:03:02.142Z",
+  "updatedAt": "2026-11-10T15:25:34.204Z",
   "prices": {
     "A": {
       "price": 340000,
@@ -7,43 +7,43 @@
       "marketStatus": "CLOSE",
       "tradedAt": "2026-11-10T20:00:00+09:00",
       "changeRate": -2.02,
-      "fetchedAt": "2026-11-10T15:03:00.288Z",
+      "fetchedAt": "2026-11-10T15:25:32.949Z",
       "stale": false
     },
     "B": {
-      "price": 144.27,
+      "price": 143.43,
       "source": "naver",
       "marketStatus": "OPEN",
-      "tradedAt": "2026-11-10T10:03:01-05:00",
-      "changeRate": 1.55,
-      "fetchedAt": "2026-11-10T15:03:00.335Z",
+      "tradedAt": "2026-11-10T10:25:31-05:00",
+      "changeRate": 0.96,
+      "fetchedAt": "2026-11-10T15:25:33.006Z",
       "stale": false
     },
     "C": {
-      "price": 51.01,
+      "price": 50.84,
       "source": "naver",
       "marketStatus": "OPEN",
-      "tradedAt": "2026-11-10T10:03:01-05:00",
-      "changeRate": -0.82,
-      "fetchedAt": "2026-11-10T15:03:00.336Z",
+      "tradedAt": "2026-11-10T10:25:34-05:00",
+      "changeRate": -1.15,
+      "fetchedAt": "2026-11-10T15:25:33.007Z",
       "stale": false
     },
     "D": {
-      "price": 1.38,
+      "price": 1.37,
       "source": "naver",
       "marketStatus": "OPEN",
-      "tradedAt": "2026-11-10T10:03:01-05:00",
-      "changeRate": 0.6,
-      "fetchedAt": "2026-11-10T15:03:00.337Z",
+      "tradedAt": "2026-11-10T10:25:34-05:00",
+      "changeRate": -0.37,
+      "fetchedAt": "2026-11-10T15:25:33.008Z",
       "stale": false
     },
     "E": {
-      "price": 215,
+      "price": 210,
       "source": "upbit",
       "marketStatus": null,
-      "tradedAt": "2026-11-10T15:02:56.679Z",
-      "changeRate": 3.3653846199999995,
-      "fetchedAt": "2026-11-10T15:03:00.338Z",
+      "tradedAt": "2026-11-10T15:25:20.191Z",
+      "changeRate": 0.9615384600000001,
+      "fetchedAt": "2026-11-10T15:25:33.010Z",
       "stale": false
     }
   }
