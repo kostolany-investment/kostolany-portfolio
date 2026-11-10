@@ -139,16 +139,12 @@ function renderRows(m) {
             <span class="avatar" data-id="${i.id}">${i.id}</span>
             <div>
               <div class="name-main">${i.label}</div>
-              <div class="name-sub">
-                ${i.currency}${i.stale ? ' <span class="stale-tag">· 이전 시세</span>' : ''}
-              </div>
+              <div class="name-sub">${i.currency}</div>
             </div>
           </div>
         </td>
         <td class="num"><span class="price">${money(i.entryPrice, i.currency)}</span></td>
-        <td class="num"><span class="price now${i.stale ? ' is-stale' : ''}"
-            ${i.stale && i.fetchedAt ? `title="${stamp(i.fetchedAt)} 조회"` : ''}
-            >${money(i.now, i.currency)}</span></td>
+        <td class="num"><span class="price now">${money(i.now, i.currency)}</span></td>
         <td class="num"><span class="pill ${tone(i.rate)}">${pct(i.rate)}</span></td>
       </tr>`
     )
@@ -176,18 +172,26 @@ async function main() {
   const at = stamp(payload?.updatedAt);
   $('asOf').textContent = at ? `${at} 기준` : '시세 시각 확인 불가';
 
-  const badge = $('srcBadge');
-  if (failure || m.live.length === 0) {
-    badge.textContent = '시세를 불러오지 못했습니다';
-    badge.classList.add('is-error');
-    if (failure) console.error(failure);
-  } else if (m.live.length < total) {
-    badge.textContent = `${total - m.live.length}종목 시세 없음`;
-    badge.classList.add('is-error');
-  } else if (m.stales > 0) {
+  const warn = $('warnMark');
+  const notes = [];
 
-    badge.textContent = `${m.stales}종목 이전 시세 표시 중`;
-    badge.classList.add('is-warn');
+  if (failure) {
+    notes.push('시세 파일을 불러오지 못했습니다.');
+    console.error(failure);
+  }
+  for (const i of m.items) {
+    if (i.now == null) notes.push(`${i.label} — 시세를 받지 못했습니다`);
+    else if (i.stale) {
+      const at = stamp(i.fetchedAt);
+      notes.push(`${i.label} — 이전 시세${at ? ` (${at} 조회)` : ''}`);
+    }
+  }
+
+  if (notes.length) {
+    warn.hidden = false;
+    warn.title = notes.join('\n');
+
+    warn.classList.toggle('is-error', failure || m.live.length < total);
   }
 }
 

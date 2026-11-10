@@ -90,15 +90,27 @@ body {
   border: 1px solid rgba(255, 184, 107, 0.28);
   color: var(--badge-fg);
 }
-.badge.is-error {
-  background: rgba(255, 90, 103, 0.12);
-  border-color: rgba(255, 90, 103, 0.35);
-  color: var(--up);
+
+.warn {
+  display: inline-grid;
+  place-items: center;
+  width: 15px; height: 15px;
+  margin-left: 7px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  background: var(--badge-fg);
+  color: var(--badge-bg);
+  cursor: help;
+
+  align-self: center;
+  position: relative;
+  top: -1px;
 }
-.badge.is-warn {
-  background: rgba(255, 184, 107, 0.1);
-  border-color: rgba(255, 184, 107, 0.4);
-  color: var(--badge-fg);
+.warn.is-error {
+  background: var(--up);
+  color: #2a0d10;
 }
 
 .card {
@@ -357,9 +369,6 @@ body {
 
 .price { font-weight: 600; color: var(--muted); }
 .price.now { color: var(--text); font-weight: 700; }
-.price.now.is-stale { color: var(--badge-fg); }
-
-.stale-tag { color: var(--badge-fg); letter-spacing: 0; }
 
 .pill {
   display: inline-flex;
