@@ -155,6 +155,15 @@ if (fresh === 0) {
   process.exit(1);
 }
 
+const unchanged =
+  ids.length === Object.keys(previous).length &&
+  ids.every((id) => previous[id]?.price === prices[id].price);
+
+if (unchanged) {
+  console.log('시세 변동 없음 — prices.json 을 그대로 둡니다.');
+  process.exit(0);
+}
+
 const payload = {
   updatedAt: new Date().toISOString(),
   prices,
