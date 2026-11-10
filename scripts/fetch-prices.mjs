@@ -157,7 +157,11 @@ if (fresh === 0) {
 
 const unchanged =
   ids.length === Object.keys(previous).length &&
-  ids.every((id) => previous[id]?.price === prices[id].price);
+  ids.every(
+    (id) =>
+      previous[id]?.price === prices[id].price &&
+      !!previous[id]?.stale === !!prices[id].stale
+  );
 
 if (unchanged) {
   console.log('시세 변동 없음 — prices.json 을 그대로 둡니다.');
