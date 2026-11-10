@@ -113,7 +113,7 @@ function renderDonut(m, total) {
   seg($('segUp'), m.ups, 0);
   seg($('segDown'), m.downs, (C * m.ups) / n);
 
-  $('donutCap').textContent = `${total} STOCKS`;
+  $('donutCap').textContent = `${total} ASSETS`;
   $('donutMain').textContent = m.live.length ? `수익 ${m.ups}종목` : '조회 실패';
 
   const rows = [

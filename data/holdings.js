@@ -3,6 +3,7 @@ const HOLDINGS = [
   { id: 'B', label: '해외주식 B', currency: 'USD', shares: 1, entryPrice: 125.0 },
   { id: 'C', label: '해외주식 C', currency: 'USD', shares: 1, entryPrice: 42.0 },
   { id: 'D', label: '해외주식 D', currency: 'USD', shares: 1, entryPrice: 0.9 },
+  { id: 'E', label: '암호화폐 E', currency: 'KRW', shares: 1, entryPrice: 240 },
 ];
 
 if (typeof module !== 'undefined') module.exports = { HOLDINGS };

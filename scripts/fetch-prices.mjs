@@ -78,27 +78,65 @@ async function fromYahoo(symbol) {
   };
 }
 
+async function fromUpbit(market) {
+  const row = (await getJson(`https://api.upbit.com/v1/ticker?markets=${market}`))?.[0];
+  if (!row) throw new Error('빈 응답');
+
+  const price = Number(row.trade_price);
+  if (!Number.isFinite(price) || price <= 0) throw new Error('현재가 없음');
+
+  return {
+    price,
+    source: 'upbit',
+    marketStatus: null,
+    tradedAt: row.timestamp ? new Date(row.timestamp).toISOString() : null,
+    changeRate: row.signed_change_rate != null ? Number(row.signed_change_rate) * 100 : null,
+  };
+}
+
+async function fromBithumb(symbol) {
+  const res = await getJson(`https://api.bithumb.com/public/ticker/${symbol}`);
+  if (res?.status !== '0000') throw new Error(`응답 코드 ${res?.status}`);
+
+  const price = Number(res.data?.closing_price);
+  if (!Number.isFinite(price) || price <= 0) throw new Error('현재가 없음');
+
+  return {
+    price,
+    source: 'bithumb',
+    marketStatus: null,
+    tradedAt: res.data.date ? new Date(Number(res.data.date)).toISOString() : null,
+    changeRate: res.data.fluctate_rate_24H != null ? Number(res.data.fluctate_rate_24H) : null,
+  };
+}
+
 async function fetchOne(id, sym, prev) {
   const now = new Date().toISOString();
-  try {
-    return { ...(await fromNaver(sym.naver)), fetchedAt: now, stale: false };
-  } catch (naverErr) {
+
+  const chain = sym.upbit
+    ? [['업비트', () => fromUpbit(sym.upbit)], ['빗썸', () => fromBithumb(sym.bithumb)]]
+    : [['네이버', () => fromNaver(sym.naver)], ['야후', () => fromYahoo(sym.yahoo)]];
+
+  const errors = [];
+  for (const [name, call] of chain) {
     try {
-      const quote = await fromYahoo(sym.yahoo);
-      console.warn(`[${id}] 네이버 실패(${naverErr.message}) → 야후로 조회`);
+      const quote = await call();
+      if (errors.length) console.warn(`[${id}] ${errors.join(' / ')} → ${name}로 조회`);
       return { ...quote, fetchedAt: now, stale: false };
-    } catch (yahooErr) {
-      const reason = `${naverErr.message} / ${yahooErr.message}`;
-
-      if (prev?.price != null) {
-        console.warn(`[${id}] 조회 실패(${reason}) → 마지막 시세 유지 (${prev.fetchedAt ?? '시각 불명'})`);
-        return { ...prev, stale: true, error: reason };
-      }
-
-      console.error(`[${id}] 조회 실패, 이어 쓸 값도 없음: ${reason}`);
-      return { price: null, source: null, stale: false, error: reason };
+    } catch (e) {
+      errors.push(`${name} 실패(${e.message})`);
     }
   }
+
+  const reason = errors.join(' / ');
+
+  if (prev?.price != null) {
+    console.warn(`[${id}] 조회 실패(${reason}) → 마지막 시세 유지 (${prev.fetchedAt ?? '시각 불명'})`);
+    return { ...prev, stale: true, error: reason };
+  }
+
+  console.error(`[${id}] 조회 실패, 이어 쓸 값도 없음: ${reason}`);
+  return { price: null, source: null, stale: false, error: reason };
 }
 
 const symbols = loadSymbols();

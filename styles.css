@@ -345,6 +345,7 @@ body {
 .avatar[data-id="B"] { color: #8b7cff; }
 .avatar[data-id="C"] { color: #3dd6f5; }
 .avatar[data-id="D"] { color: #ff9f43; }
+.avatar[data-id="E"] { color: #ff7ac6; }
 
 .name-main { font-size: 15px; font-weight: 700; }
 .name-sub {
