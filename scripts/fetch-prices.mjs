@@ -30,9 +30,10 @@ function loadSymbols() {
 
 function loadPrevious() {
   try {
-    return JSON.parse(readFileSync(join(ROOT, 'data/prices.json'), 'utf8'))?.prices ?? {};
+    const d = JSON.parse(readFileSync(join(ROOT, 'data/prices.json'), 'utf8'));
+    return { prices: d?.prices ?? {}, updatedAt: d?.updatedAt ?? null };
   } catch {
-    return {};
+    return { prices: {}, updatedAt: null };
   }
 }
 
@@ -142,7 +143,7 @@ async function fetchOne(id, sym, prev) {
 const symbols = loadSymbols();
 const previous = loadPrevious();
 const ids = Object.keys(symbols);
-const results = await Promise.all(ids.map((id) => fetchOne(id, symbols[id], previous[id])));
+const results = await Promise.all(ids.map((id) => fetchOne(id, symbols[id], previous.prices[id])));
 
 const prices = {};
 ids.forEach((id, i) => (prices[id] = results[i]));
@@ -150,17 +151,12 @@ ids.forEach((id, i) => (prices[id] = results[i]));
 const fresh = results.filter((r) => !r.stale && r.price != null).length;
 const shown = results.filter((r) => r.price != null).length;
 
-if (fresh === 0) {
-  console.error('새로 받아온 시세가 없습니다 — prices.json 을 그대로 둡니다.');
-  process.exit(1);
-}
-
 const unchanged =
-  ids.length === Object.keys(previous).length &&
+  ids.length === Object.keys(previous.prices).length &&
   ids.every(
     (id) =>
-      previous[id]?.price === prices[id].price &&
-      !!previous[id]?.stale === !!prices[id].stale
+      previous.prices[id]?.price === prices[id].price &&
+      !!previous.prices[id]?.stale === !!prices[id].stale
   );
 
 if (unchanged) {
@@ -168,8 +164,13 @@ if (unchanged) {
   process.exit(0);
 }
 
+if (fresh === 0) {
+  console.error('전 종목 조회 실패 — 마지막 시세를 유지하고 실패 사실만 기록합니다.');
+}
+
 const payload = {
-  updatedAt: new Date().toISOString(),
+
+  updatedAt: fresh > 0 ? new Date().toISOString() : previous.updatedAt ?? new Date().toISOString(),
   prices,
 };
 
