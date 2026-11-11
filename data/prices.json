@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T13:48:25.952Z",
+  "updatedAt": "2026-11-11T14:39:51.247Z",
   "prices": {
     "A": {
       "price": 354000,
@@ -7,43 +7,43 @@
       "marketStatus": "CLOSE",
       "tradedAt": "2026-11-11T20:00:00+09:00",
       "changeRate": 4.12,
-      "fetchedAt": "2026-11-11T13:48:24.183Z",
+      "fetchedAt": "2026-11-11T14:39:50.046Z",
       "stale": false
     },
     "B": {
-      "price": 143.09,
+      "price": 142.29,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-10T16:00:00-05:00",
-      "changeRate": 0.72,
-      "fetchedAt": "2026-11-11T13:48:24.238Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-11T09:39:50-05:00",
+      "changeRate": -0.56,
+      "fetchedAt": "2026-11-11T14:39:50.104Z",
       "stale": false
     },
     "C": {
-      "price": 50.34,
+      "price": 52.28,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-10T16:00:00-05:00",
-      "changeRate": -2.12,
-      "fetchedAt": "2026-11-11T13:48:24.239Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-11T09:39:51-05:00",
+      "changeRate": 3.85,
+      "fetchedAt": "2026-11-11T14:39:50.106Z",
       "stale": false
     },
     "D": {
-      "price": 1.28,
+      "price": 1.39,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-10T16:00:00-05:00",
-      "changeRate": -6.57,
-      "fetchedAt": "2026-11-11T13:48:24.240Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-11T09:39:51-05:00",
+      "changeRate": 8.64,
+      "fetchedAt": "2026-11-11T14:39:50.107Z",
       "stale": false
     },
     "E": {
-      "price": 207,
+      "price": 208,
       "source": "upbit",
       "marketStatus": null,
-      "tradedAt": "2026-11-11T13:48:16.690Z",
-      "changeRate": 1.47058824,
-      "fetchedAt": "2026-11-11T13:48:24.242Z",
+      "tradedAt": "2026-11-11T14:39:48.730Z",
+      "changeRate": 1.9607843100000002,
+      "fetchedAt": "2026-11-11T14:39:50.109Z",
       "stale": false
     }
   }
