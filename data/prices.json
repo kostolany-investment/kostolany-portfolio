@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T20:25:45.765Z",
+  "updatedAt": "2026-11-12T21:25:00.857Z",
   "prices": {
     "A": {
       "price": 347000,
@@ -7,43 +7,43 @@
       "marketStatus": "CLOSE",
       "tradedAt": "2026-11-12T20:00:00+09:00",
       "changeRate": -1.98,
-      "fetchedAt": "2026-11-12T20:25:44.327Z",
+      "fetchedAt": "2026-11-12T21:24:59.207Z",
       "stale": false
     },
     "B": {
-      "price": 140.43,
+      "price": 139.94,
       "source": "naver",
-      "marketStatus": "OPEN",
-      "tradedAt": "2026-11-12T15:25:45-05:00",
-      "changeRate": 0.49,
-      "fetchedAt": "2026-11-12T20:25:44.387Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-12T16:00:00-05:00",
+      "changeRate": 0.14,
+      "fetchedAt": "2026-11-12T21:24:59.241Z",
       "stale": false
     },
     "C": {
-      "price": 49.77,
+      "price": 50.18,
       "source": "naver",
-      "marketStatus": "OPEN",
-      "tradedAt": "2026-11-12T15:25:45-05:00",
-      "changeRate": 0.24,
-      "fetchedAt": "2026-11-12T20:25:44.388Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-12T16:00:00-05:00",
+      "changeRate": 1.07,
+      "fetchedAt": "2026-11-12T21:24:59.242Z",
       "stale": false
     },
     "D": {
       "price": 1.22,
       "source": "naver",
-      "marketStatus": "OPEN",
-      "tradedAt": "2026-11-12T15:25:45-05:00",
-      "changeRate": -4.33,
-      "fetchedAt": "2026-11-12T20:25:44.389Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-12T16:00:00-05:00",
+      "changeRate": -3.94,
+      "fetchedAt": "2026-11-12T21:24:59.243Z",
       "stale": false
     },
     "E": {
-      "price": 189,
+      "price": 190,
       "source": "upbit",
       "marketStatus": null,
-      "tradedAt": "2026-11-12T20:24:47.628Z",
-      "changeRate": -4.54545455,
-      "fetchedAt": "2026-11-12T20:25:44.391Z",
+      "tradedAt": "2026-11-12T21:24:57.487Z",
+      "changeRate": -4.04040404,
+      "fetchedAt": "2026-11-12T21:24:59.244Z",
       "stale": false
     }
   }
