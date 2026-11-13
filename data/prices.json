@@ -1,49 +1,49 @@
 {
-  "updatedAt": "2026-11-13T08:58:14.598Z",
+  "updatedAt": "2026-11-13T09:59:16.545Z",
   "prices": {
     "A": {
-      "price": 342000,
+      "price": 343000,
       "source": "naver",
       "marketStatus": "OPEN",
-      "tradedAt": "2026-11-13T17:58:13.858696+09:00",
-      "changeRate": -0.58,
-      "fetchedAt": "2026-11-13T08:58:12.851Z",
+      "tradedAt": "2026-11-13T18:59:16.168323+09:00",
+      "changeRate": -0.29,
+      "fetchedAt": "2026-11-13T09:59:14.988Z",
       "stale": false
     },
     "B": {
       "price": 139.94,
       "source": "naver",
-      "marketStatus": "PREOPEN",
-      "tradedAt": "2026-11-13T03:58:13-05:00",
-      "changeRate": 0,
-      "fetchedAt": "2026-11-13T08:58:12.896Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-12T16:00:00-05:00",
+      "changeRate": 0.14,
+      "fetchedAt": "2026-11-13T09:59:15.033Z",
       "stale": false
     },
     "C": {
       "price": 50.18,
       "source": "naver",
-      "marketStatus": "PREOPEN",
-      "tradedAt": "2026-11-13T03:58:14-05:00",
-      "changeRate": 0,
-      "fetchedAt": "2026-11-13T08:58:12.897Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-12T16:00:00-05:00",
+      "changeRate": 1.07,
+      "fetchedAt": "2026-11-13T09:59:15.034Z",
       "stale": false
     },
     "D": {
       "price": 1.22,
       "source": "naver",
-      "marketStatus": "PREOPEN",
-      "tradedAt": "2026-11-13T03:58:14-05:00",
-      "changeRate": 0,
-      "fetchedAt": "2026-11-13T08:58:12.898Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-12T16:00:00-05:00",
+      "changeRate": -3.94,
+      "fetchedAt": "2026-11-13T09:59:15.035Z",
       "stale": false
     },
     "E": {
       "price": 186,
       "source": "upbit",
       "marketStatus": null,
-      "tradedAt": "2026-11-13T08:57:51.499Z",
+      "tradedAt": "2026-11-13T09:59:06.839Z",
       "changeRate": -2.10526316,
-      "fetchedAt": "2026-11-13T08:58:12.899Z",
+      "fetchedAt": "2026-11-13T09:59:15.036Z",
       "stale": false
     }
   }
