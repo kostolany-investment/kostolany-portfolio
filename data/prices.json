@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T12:08:39.708Z",
+  "updatedAt": "2026-11-17T14:37:33.116Z",
   "prices": {
     "A": {
       "price": 362500,
@@ -7,43 +7,43 @@
       "marketStatus": "CLOSE",
       "tradedAt": "2026-11-17T20:00:00+09:00",
       "changeRate": 1.68,
-      "fetchedAt": "2026-11-17T12:08:38.205Z",
+      "fetchedAt": "2026-11-17T14:37:31.409Z",
       "stale": false
     },
     "B": {
-      "price": 137.36,
+      "price": 140.88,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-16T16:00:00-05:00",
-      "changeRate": -1.26,
-      "fetchedAt": "2026-11-17T12:08:38.264Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-17T09:37:29-05:00",
+      "changeRate": 2.56,
+      "fetchedAt": "2026-11-17T14:37:31.446Z",
       "stale": false
     },
     "C": {
-      "price": 51.88,
+      "price": 51.71,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-16T16:00:00-05:00",
-      "changeRate": -1.76,
-      "fetchedAt": "2026-11-17T12:08:38.266Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-17T09:37:32-05:00",
+      "changeRate": -0.34,
+      "fetchedAt": "2026-11-17T14:37:31.447Z",
       "stale": false
     },
     "D": {
       "price": 1.06,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-16T16:00:00-05:00",
-      "changeRate": -7.83,
-      "fetchedAt": "2026-11-17T12:08:38.267Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-17T09:37:32-05:00",
+      "changeRate": 0.3,
+      "fetchedAt": "2026-11-17T14:37:31.448Z",
       "stale": false
     },
     "E": {
-      "price": 160,
+      "price": 159,
       "source": "upbit",
       "marketStatus": null,
-      "tradedAt": "2026-11-17T12:08:33.594Z",
-      "changeRate": 1.9108280299999998,
-      "fetchedAt": "2026-11-17T12:08:38.269Z",
+      "tradedAt": "2026-11-17T14:37:28.021Z",
+      "changeRate": 1.27388535,
+      "fetchedAt": "2026-11-17T14:37:31.449Z",
       "stale": false
     }
   }
