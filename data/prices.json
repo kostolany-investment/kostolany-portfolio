@@ -1,49 +1,49 @@
 {
-  "updatedAt": "2026-11-19T08:47:57.815Z",
+  "updatedAt": "2026-11-19T09:46:16.041Z",
   "prices": {
     "A": {
-      "price": 356000,
+      "price": 356500,
       "source": "naver",
       "marketStatus": "OPEN",
-      "tradedAt": "2026-11-19T17:47:57.724704+09:00",
-      "changeRate": -1.79,
-      "fetchedAt": "2026-11-19T08:47:57.057Z",
+      "tradedAt": "2026-11-19T18:46:15.197451+09:00",
+      "changeRate": -1.66,
+      "fetchedAt": "2026-11-19T09:46:14.011Z",
       "stale": false
     },
     "B": {
       "price": 143.5,
       "source": "naver",
-      "marketStatus": "PREOPEN",
-      "tradedAt": "2026-11-19T03:47:57-05:00",
-      "changeRate": 0,
-      "fetchedAt": "2026-11-19T08:47:57.099Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-18T16:00:00-05:00",
+      "changeRate": 1.27,
+      "fetchedAt": "2026-11-19T09:46:14.068Z",
       "stale": false
     },
     "C": {
       "price": 48.96,
       "source": "naver",
-      "marketStatus": "PREOPEN",
-      "tradedAt": "2026-11-19T03:47:57-05:00",
-      "changeRate": 0,
-      "fetchedAt": "2026-11-19T08:47:57.100Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-18T16:00:00-05:00",
+      "changeRate": -2.78,
+      "fetchedAt": "2026-11-19T09:46:14.069Z",
       "stale": false
     },
     "D": {
       "price": 1.07,
       "source": "naver",
-      "marketStatus": "PREOPEN",
-      "tradedAt": "2026-11-19T03:47:57-05:00",
-      "changeRate": 0,
-      "fetchedAt": "2026-11-19T08:47:57.101Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-18T16:00:00-05:00",
+      "changeRate": 5.94,
+      "fetchedAt": "2026-11-19T09:46:14.070Z",
       "stale": false
     },
     "E": {
-      "price": 150,
+      "price": 151,
       "source": "upbit",
       "marketStatus": null,
-      "tradedAt": "2026-11-19T08:47:32.614Z",
-      "changeRate": -1.9607843100000002,
-      "fetchedAt": "2026-11-19T08:47:57.102Z",
+      "tradedAt": "2026-11-19T09:45:17.923Z",
+      "changeRate": -1.30718954,
+      "fetchedAt": "2026-11-19T09:46:14.072Z",
       "stale": false
     }
   }
