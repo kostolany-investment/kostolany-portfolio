@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T20:33:40.501Z",
+  "updatedAt": "2026-11-20T21:25:43.522Z",
   "prices": {
     "A": {
       "price": 345500,
@@ -7,43 +7,43 @@
       "marketStatus": "CLOSE",
       "tradedAt": "2026-11-20T20:00:00+09:00",
       "changeRate": -2.54,
-      "fetchedAt": "2026-11-20T20:33:39.357Z",
+      "fetchedAt": "2026-11-20T21:25:42.232Z",
       "stale": false
     },
     "B": {
-      "price": 128.78,
+      "price": 127.64,
       "source": "naver",
-      "marketStatus": "OPEN",
-      "tradedAt": "2026-11-20T15:33:40-05:00",
-      "changeRate": -6.97,
-      "fetchedAt": "2026-11-20T20:33:39.402Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-20T16:00:00-05:00",
+      "changeRate": -7.79,
+      "fetchedAt": "2026-11-20T21:25:42.290Z",
       "stale": false
     },
     "C": {
-      "price": 44.69,
+      "price": 44.75,
       "source": "naver",
-      "marketStatus": "OPEN",
-      "tradedAt": "2026-11-20T15:33:40-05:00",
-      "changeRate": -4.31,
-      "fetchedAt": "2026-11-20T20:33:39.402Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-20T16:00:00-05:00",
+      "changeRate": -4.18,
+      "fetchedAt": "2026-11-20T21:25:42.291Z",
       "stale": false
     },
     "D": {
-      "price": 0.9,
+      "price": 0.91,
       "source": "naver",
-      "marketStatus": "OPEN",
-      "tradedAt": "2026-11-20T15:33:40-05:00",
-      "changeRate": -15.5,
-      "fetchedAt": "2026-11-20T20:33:39.403Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-20T16:00:00-05:00",
+      "changeRate": -15.05,
+      "fetchedAt": "2026-11-20T21:25:42.292Z",
       "stale": false
     },
     "E": {
-      "price": 132,
+      "price": 134,
       "source": "upbit",
       "marketStatus": null,
-      "tradedAt": "2026-11-20T20:33:38.896Z",
-      "changeRate": -7.69230769,
-      "fetchedAt": "2026-11-20T20:33:39.405Z",
+      "tradedAt": "2026-11-20T21:25:41.199Z",
+      "changeRate": -6.293706289999999,
+      "fetchedAt": "2026-11-20T21:25:42.294Z",
       "stale": false
     }
   }
