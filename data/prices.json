@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T14:10:45.554Z",
+  "updatedAt": "2026-11-23T15:28:27.754Z",
   "prices": {
     "A": {
       "price": 317000,
@@ -7,43 +7,43 @@
       "marketStatus": "CLOSE",
       "tradedAt": "2026-11-23T20:00:00+09:00",
       "changeRate": -9.17,
-      "fetchedAt": "2026-11-23T14:10:44.399Z",
+      "fetchedAt": "2026-11-23T15:28:26.384Z",
       "stale": false
     },
     "B": {
-      "price": 127.79,
+      "price": 139.4,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-20T16:00:00-05:00",
-      "changeRate": -7.69,
-      "fetchedAt": "2026-11-23T14:10:44.441Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-23T10:28:27-05:00",
+      "changeRate": 9.09,
+      "fetchedAt": "2026-11-23T15:28:26.441Z",
       "stale": false
     },
     "C": {
-      "price": 44.75,
+      "price": 47.01,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-20T16:00:00-05:00",
-      "changeRate": -4.18,
-      "fetchedAt": "2026-11-23T14:10:44.442Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-23T10:28:27-05:00",
+      "changeRate": 5.04,
+      "fetchedAt": "2026-11-23T15:28:26.442Z",
       "stale": false
     },
     "D": {
-      "price": 0.91,
+      "price": 0.98,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-20T16:00:00-05:00",
-      "changeRate": -15.05,
-      "fetchedAt": "2026-11-23T14:10:44.442Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-23T10:28:27-05:00",
+      "changeRate": 8.01,
+      "fetchedAt": "2026-11-23T15:28:26.443Z",
       "stale": false
     },
     "E": {
-      "price": 149,
+      "price": 151,
       "source": "upbit",
       "marketStatus": null,
-      "tradedAt": "2026-11-23T14:10:37.284Z",
-      "changeRate": 7.194244599999999,
-      "fetchedAt": "2026-11-23T14:10:44.444Z",
+      "tradedAt": "2026-11-23T15:28:11.612Z",
+      "changeRate": 8.63309353,
+      "fetchedAt": "2026-11-23T15:28:26.445Z",
       "stale": false
     }
   }
