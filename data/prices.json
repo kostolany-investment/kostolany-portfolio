@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T20:38:57.446Z",
+  "updatedAt": "2026-11-24T21:41:11.423Z",
   "prices": {
     "A": {
       "price": 322500,
@@ -7,43 +7,43 @@
       "marketStatus": "CLOSE",
       "tradedAt": "2026-11-24T20:00:00+09:00",
       "changeRate": 2.87,
-      "fetchedAt": "2026-11-24T20:38:56.041Z",
+      "fetchedAt": "2026-11-24T21:41:10.107Z",
       "stale": false
     },
     "B": {
-      "price": 125.9,
+      "price": 125.81,
       "source": "naver",
-      "marketStatus": "OPEN",
-      "tradedAt": "2026-11-24T15:38:57-05:00",
-      "changeRate": -5.59,
-      "fetchedAt": "2026-11-24T20:38:56.096Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-24T16:00:00-05:00",
+      "changeRate": -5.65,
+      "fetchedAt": "2026-11-24T21:41:10.147Z",
       "stale": false
     },
     "C": {
-      "price": 47.85,
+      "price": 48.37,
       "source": "naver",
-      "marketStatus": "OPEN",
-      "tradedAt": "2026-11-24T15:38:57-05:00",
-      "changeRate": 0.77,
-      "fetchedAt": "2026-11-24T20:38:56.097Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-24T16:00:00-05:00",
+      "changeRate": 1.87,
+      "fetchedAt": "2026-11-24T21:41:10.148Z",
       "stale": false
     },
     "D": {
-      "price": 0.88,
+      "price": 0.89,
       "source": "naver",
-      "marketStatus": "OPEN",
-      "tradedAt": "2026-11-24T15:38:57-05:00",
-      "changeRate": -4.64,
-      "fetchedAt": "2026-11-24T20:38:56.098Z",
+      "marketStatus": "CLOSE",
+      "tradedAt": "2026-11-24T16:00:00-05:00",
+      "changeRate": -3.73,
+      "fetchedAt": "2026-11-24T21:41:10.149Z",
       "stale": false
     },
     "E": {
-      "price": 133,
+      "price": 134,
       "source": "upbit",
       "marketStatus": null,
-      "tradedAt": "2026-11-24T20:38:48.489Z",
-      "changeRate": -4.31654676,
-      "fetchedAt": "2026-11-24T20:38:56.099Z",
+      "tradedAt": "2026-11-24T21:41:10.167Z",
+      "changeRate": -3.5971222999999997,
+      "fetchedAt": "2026-11-24T21:41:10.150Z",
       "stale": false
     }
   }
