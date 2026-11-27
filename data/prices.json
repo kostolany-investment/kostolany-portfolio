@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T12:34:43.034Z",
+  "updatedAt": "2026-11-27T14:57:51.614Z",
   "prices": {
     "A": {
       "price": 388000,
@@ -7,43 +7,43 @@
       "marketStatus": "CLOSE",
       "tradedAt": "2026-11-27T20:00:00+09:00",
       "changeRate": 7.78,
-      "fetchedAt": "2026-11-27T12:34:42.165Z",
+      "fetchedAt": "2026-11-27T14:57:50.338Z",
       "stale": false
     },
     "B": {
-      "price": 127.44,
+      "price": 130.12,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-25T16:00:00-05:00",
-      "changeRate": 1.3,
-      "fetchedAt": "2026-11-27T12:34:42.207Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-27T09:57:51-05:00",
+      "changeRate": 2.1,
+      "fetchedAt": "2026-11-27T14:57:50.396Z",
       "stale": false
     },
     "C": {
-      "price": 48.24,
+      "price": 49.77,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-25T16:00:00-05:00",
-      "changeRate": -0.27,
-      "fetchedAt": "2026-11-27T12:34:42.208Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-27T09:57:51-05:00",
+      "changeRate": 3.17,
+      "fetchedAt": "2026-11-27T14:57:50.398Z",
       "stale": false
     },
     "D": {
-      "price": 0.86,
+      "price": 0.88,
       "source": "naver",
-      "marketStatus": "CLOSE",
-      "tradedAt": "2026-11-25T16:00:00-05:00",
-      "changeRate": -3.31,
-      "fetchedAt": "2026-11-27T12:34:42.209Z",
+      "marketStatus": "OPEN",
+      "tradedAt": "2026-11-27T09:57:51-05:00",
+      "changeRate": 1.83,
+      "fetchedAt": "2026-11-27T14:57:50.399Z",
       "stale": false
     },
     "E": {
-      "price": 145,
+      "price": 137,
       "source": "upbit",
       "marketStatus": null,
-      "tradedAt": "2026-11-27T12:34:25.051Z",
-      "changeRate": 6.6176470599999995,
-      "fetchedAt": "2026-11-27T12:34:42.211Z",
+      "tradedAt": "2026-11-27T14:57:47.009Z",
+      "changeRate": 0.73529412,
+      "fetchedAt": "2026-11-27T14:57:50.400Z",
       "stale": false
     }
   }
